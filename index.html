@@ -7,17 +7,61 @@
      type="image/png" 
      href="http://example.com/myicon.png">
 	 
-	 <LINK href="styles.css" rel="stylesheet" type="text/css">
+         <LINK href="styles.css" rel="stylesheet" type="text/css">
 	 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+    $("p").click(function(){
+        //$(this).hide();
+        $("#content").load("http://www.google.com");
+        $("#content").html("<b>Hello world!</b>");
+        $(this).css("background-color", "lightgray");
+    });
+});
+</script>
 </head>
-  
 <body>
 
-	Site is under construction
-	<footer>
-		<p>Owned by: Sourabh Kushwaha</p>
-		<p>Contact information: <a href="mailto:kussourabh2008@gmail.com">kussourabh2008@gmail.com</a>.</p>
-	</footer>
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+
+        Site is under construction
+
+     <div id="content"></div>
+
+<section id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <div class="footer-contant">
+                        <h3>Say Hi, Get In Touch</h3>
+                        <div class="social-icon">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-tumblr"></i></a>
+                            <a href="#"><i class="fa fa-google"></i></a>
+                            <a href="#"><i class="fa fa-flickr"></i></a>
+                            <a href="#"><i class="fa fa-youtube"></i></a>
+                        </div>
+                        <div class="support-link">
+                            <ul>
+                                <li><a href="mailto:info@openmerchantaccount.com">Contact</a></li>
+                                <li><a href="http://www.twitter.com/twitter">Twitter</a></li>
+                                <li><a href="mailto:kussourabh2008@gmail.com">Support</a></li>
+                                <li><a href="http://blog.dotnetframework.org">Developers</a></li>
+                                <li><a href="privacypolicy.html">Privacy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- col-md-12 -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</section><!-- #footer -->
+
 </body>
 
 </html>
