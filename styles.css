@@ -10,6 +10,25 @@ p {
   font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
 }
 
+/*=========================
+        2)header Start
+===========================*/
+
+.nav-link ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #2D312F; }
+.nav-link ul li { float: left; border-right:1px solid #bbb; }
+.nav-link ul li:last-child { border-right: none; }
+.nav-link ul li a { display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none; }
+.nav-link ul li a:hover:not(.active) { background-color: #111; }
+.active { background-color: #4CAF50; }
+
+/*=========================
+        header close
+===========================*/
+
+
+/*=========================
+        9) footer Start
+===========================*/
 
 #footer{background: #2D312F;text-align: center; padding-top: 75px; padding-bottom: 50px;}
 #footer .block{}
@@ -28,3 +47,7 @@ width: 42px;}
 .support-link ul{margin:0px; padding: 0px; list-style: none;}
 .support-link ul li{display: inline-block; padding: 0px 10px}
 .support-link ul li a{display: inline-block; color: #8C9494; font-size: 14px}
+
+/*=========================
+         footer CLOSE
+===========================*/
